@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link type="text/css" rel="stylesheet" href ="/web_ex5/css/joinLayout.css">
+
+
+</head>
+<body>
+	<header id="header">
+		<h1 id="title">
+			<span class="blue_text">뷰티포인트&nbsp;X&nbsp;</span><span class="brown_text">설화수&nbsp;</span><span class="blue_text">회원가입</span>
+		</h1>
+	</header>
+	
+	<!---------- Contents Start ---------->
+	<section id="body">
+		<div id="body_wrap">
+			<div id="content">
+				<h1 id="welcome">뷰티포인트 통합멤버십 회원 가입을 환영합니다!</h1>
+				<span id="text">아모레퍼시픽 통합멤버십(뷰티포인트)에 가입하시면 설화수 외 모든 브랜드 온/오프 매장에서 상품을 구매할 때마다 현금처럼 사용할 수 있는 포인트 적립과 사용 등 다양한 혜택을 받으실 수 있습니다.</span>
+			</div>
+			<div id="join">
+				<div class="join_form">
+					<input type="text" id="name" placeholder="이름(실명으로 입력해주세요)">
+				</div>
+				<div class="join_form">
+					<div class="areafit">
+						<div class="birthfit">
+							<input type="text" id="birth" placeholder="생년월일8자리(ex.19980905)">
+						</div>
+						<div class="genderfit">
+							<ul>
+								<li><input type="radio" name="gender">
+								<label for ="male">"남자"</label>
+								</li>
+								<li><input type="radio" name="gender">
+								<label for ="female">"여자"</label>
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+				
+				<div class="join_form">
+					<div class="fitwrap">
+						<div class="mobilefit">
+							<select class="select" id="mobile">
+							<option>통신사선택</option>
+							<option>SKT</option>
+							<option>KT</option>
+							<option>LG U+</option>
+							<option>SKT 알뜰폰</option>
+							<option>KT 알뜰폰</option>
+							<option>LG U+ 알뜰폰</option>
+							</select>
+						</div>
+						<div class="phonefit">
+							<input type="text" id="phone" placeholder="01012345678">
+						</div>
+					</div>
+				</div>	
+				
+				<div class="caption">
+					<span>*아이디 미입력시 휴대폰번호로 가입되어 가입완료 후 변경 불가합니다.</span>
+				</div>
+				<div class="join_form">
+					<input type="text" id="id" placeholder="아이디 (4~12자 영문 대·소문자)">
+				</div>
+				<div class="pw_select_wrap">
+					<span class="pw_select" id="direct"><input type="radio" name="pw"> 비밀번호 직접입력 </span>
+					<span class="pw_select" id="auto"><input type="radio" name="pw" > 비밀번호 자동발급 </span>
+				</div>
+				<div class="join_form">
+					<input type="password" id="password" placeholder="비밀번호는 6~16자 영문 대소문자, 숫자, 특수문자 중 최소 2가지 이상의 문자조합 6~16자로 입력해주세요">
+				</div>
+				<div class="join_form">
+					<input type="password" id="password" placeholder="비밀번호 확인">
+				</div>
+				
+			</div>		<!-- join -->
+			
+			
+			<div id="all_agree">
+				<span><input type="checkbox" name="all"> 모든 약관 동의 </span>
+			</div>
+			
+			<div class="agree_text1">
+				<span>아래 모든 약관 (필수/선택 포함) 및 광고성 정보수신 동의 내용을 확인하고 전체 동의합니다. ※ 선택 항목에 대한 동의를 거부하더라도 회원가입에 영향을 미치지 않습니다.</span>
+			</div>	
+			<div class="agree_title">
+				<p>아모레퍼시픽 통합 멤버십 뷰티포인트 회원약관</p>	
+			</div>	
+			<div class="agree_wrap">	
+				<div class="check"><p class="check_text"><input type="checkbox" name="all">[필수] 뷰티포인트 서비스 이용약관</p></div>
+				<div class="check"><p class="check_text"><input type="checkbox" name="all">[필수] 개인정보 이용 및 수집에 대한 동의</p></div>
+				<div class="check1"><p class="check_text"><input type="checkbox" name="agree_select">[선택] 개인정보 제 3자 제공 동의</p>
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;※ 외부 컨텐츠 마케팅 활용</span>
+				</div>
+				<div class="check"><p class="check_text"><input type="checkbox" name="agree_select">[선택] 국외이전동의</p></div>
+			</div>	
+			<div class="agree_title">
+				<p>광고성 정보 수신 동의</p>
+				<span>&nbsp;&nbsp;&nbsp;쇼핑 혜택, 이벤트 소식을 받아보세요</span>
+			</div>
+			<div class="ad_wrap">
+				<div class="check"><p class="check_text"><input type="checkbox" name="agree_select">[선택] 뷰티포인트 문자 수신 동의</p></div>
+				<div class="check"><p class="check_text"><input type="checkbox" name="agree_select">[선택] 온라인 사이트 문자 수신 동의</p></div>
+			</div>		
+			<div class="agree_title">		
+				<p>개인정보 취급 위탁에 대한 안내</p>
+			</div>
+			<div class="text_wrap">
+				<span>※ 아모레퍼시픽은 서비스 향상 및 원활한 전산 처리 등을 위하여 이용자의 개인정보 관리를 외부 전문업체에 위탁하고 있습니다. 아모레퍼시픽의 업무를 위탁받는 자 및 업무의 내용은 아모레퍼시픽 홈페이지 https://www.beautypoint.co.kr/footer/privacy/personal.html 에서 확인 하실 수 있습니다.
+				</span>
+			</div>
+			<br><br>
+			<div id="join_button">
+				<input type="button" id="finish" value ="본인인증 및 회원가입">
+			</div>
+		</div>
+		
+	
+	
+	
+	
+	</section>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
